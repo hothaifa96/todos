@@ -4,15 +4,15 @@ const API_URLS = {
   users:
     window.ENV?.USERS_API_URL ||
     localStorage.getItem("USERS_API_URL") ||
-    "http://users-svc.default:5001",
+    "http://localhost:5001",
   auth:
     window.ENV?.AUTH_API_URL ||
     localStorage.getItem("AUTH_API_URL") ||
-    "http://auth-svc.default:5002",
+    "http://localhost:5002",
   todos:
     window.ENV?.TODOS_API_URL ||
     localStorage.getItem("TODOS_API_URL") ||
-    "http://todos-svc.default:5003",
+    "http://localhost:5003",
 };
 
 // DOM Elements

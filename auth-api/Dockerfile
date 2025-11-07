@@ -8,6 +8,8 @@ RUN pip install -r requirements.txt
 
 COPY auth.py .
 
+
+
 EXPOSE 5002
 
 CMD [ "python3","auth.py" ]

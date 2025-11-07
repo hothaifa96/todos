@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, request
 import requests
 import os
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 users_url = os.environ.get('USERS_API_URL','http://localhost:5001')
 
