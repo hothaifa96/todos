@@ -8,6 +8,8 @@ RUN pip install -r requirements.txt
 
 COPY users_api.py .
 
+ENV PORT=5001
+
 EXPOSE 5001
 
 CMD [ "python3","users_api.py" ]

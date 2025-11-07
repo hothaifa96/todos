@@ -8,7 +8,8 @@ RUN pip install -r requirements.txt
 
 COPY auth.py .
 
-
+ENV USERS_API_URL=http://localhost:5001
+ENV PORT=5002
 
 EXPOSE 5002
 
